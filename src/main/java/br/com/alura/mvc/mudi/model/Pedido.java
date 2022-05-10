@@ -57,7 +57,7 @@ public class Pedido {
         return urlImagem;
     }
 
-    public void setUrlImagem(String urlImagem) {
+	public void setUrlImagem(String urlImagem) {
         this.urlImagem = urlImagem;
     }
 
