@@ -61,6 +61,13 @@
 			<scope>runtime</scope>
 		</dependency>
 
+		<!-- DEPENDENCIA PARA USO DO BEAN VALIDATION -->
+		<!-- apenas necessário a partir do spring 2.3 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+
 
 	</dependencies>
 
