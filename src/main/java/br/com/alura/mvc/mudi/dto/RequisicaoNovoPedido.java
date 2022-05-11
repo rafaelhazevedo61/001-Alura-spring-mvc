@@ -6,7 +6,7 @@ import br.com.alura.mvc.mudi.model.Pedido;
 
 public class RequisicaoNovoPedido {
 
-	@NotBlank
+	@NotBlank//NotBlankl.requisicaoNovoPedido.nomeProduto=campo deve ser preenchido
 	private String nomeProduto;
 
 	@NotBlank
