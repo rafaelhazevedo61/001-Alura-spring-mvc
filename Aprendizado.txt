@@ -1,0 +1,64 @@
+• Aula 1
+
+> Para gerar o projeto usamos o Spring Initialzr: https://start.spring.io/
+> Usamos o Spring Boot para inicializar a aplicação e rodar o Tomcat
+> Spring Boot já tem o servlet container Tomcat embutido
+> Spring MVC segue o padrão arquitetural Model-View-Controller
+> O servlet do Spring MVC recebe as requisições e delega para controllers mais específicos
+> Como View, o Spring MVC usa Thymeleaf
+> O Thymeleaf é uma alternativa a tecnologia JSP, serve para gerar HTML dinamicamente
+> Thymeleaf tem a vantagem de usar atributos para definir a expression language
+> Para definir uma classe que responde uma requisição HTTP, usamos as anotações:
+- @Controller, @GetMapping entre outras opções
+> Métodos que atendem requisições HTTP são chamados de action
+
+• Aula 2
+
+> Como usar um modelo nosso para a view
+> Como iterar com Thymeleaf e trabalhar com inputs e imagens
+> Como aplicar classes do Bootstrap e posicionar elementos de maneira responsiva
+
+• Aula 3
+
+> A integrar o módulo Spring Data JPA
+- Configuramos as dependências no pom.xml
+- Configuramos os dados da conexão pelo application.properties
+> Que, para usar o Spring Data JPA, basta criar uma interface e:
+- Usar a anotação @Repository
+- Estender uma interface do Spring como JpaRepository
+> Que um repositório padrão do Spring já tem vários métodos implementados. como findAll, save, delete ou findById
+> Que, para receber uma instância do repositório, usamos a injeção de dependências
+
+• Aula 4
+
+> Trabalhar com os componentes jumbotron do Bootstrap
+> Usar o elemento nav do HTML5
+> Usar a anotação @RequestMapping para definir uma parte da rota (entre outras possibilidades)
+> Usar o padrão DTO (Data Transfer Object) para receber dados da requisição HTTP
+- Para tal, o nome do input HTML precisa ser igual aos atributos (getter e setter) do DTO
+> Usar o JpaRepository para salvar uma entidade
+
+• Aula 5
+
+> Que Bean Validation usa anotações para definir as regras de validação como @NotBlank ou @Pattern
+> Para realmente executar as validações, devemos usar a anotação @Valid no método do controller
+> Para saber se existem erros de validação ou não, existe o objeto do tipo BindingResult
+> Para mostrar os erros de validação, o Thymeleaf possui atributos como th:object, th:field e th:errorClass
+
+• Aula 6
+
+> Como criar um arquivo base para definir pedaços de HTML, com o atributo 
+- th:fragment
+> Como importar os fragmentos, usando th:replace
+
+• Aula 7
+
+> Como usar um switch no Thymeleaf, usando a tag th:block com o atributo th:switch e th:case
+> Como adicionar uma classe dinamicamente com th:classappend
+> Como formatar números e data através dos helpers do Thymeleaf
+- Usamos #numbers.formatDecimal(..) para formatar o número decimal
+- Usamos #temporals.format((..) para formatar a data
+- Existem vários outros helpers na documentação
+> Como fazer um redirecionamento pelo Spring MVC, usando o prefixo redirect na action
+> Como fazer o tratamento de erro usando o método onError
+> Como trabalhar com @PathVariable e enumerações
